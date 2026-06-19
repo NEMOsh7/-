@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Живи и побеждай в Саратове - Шапка</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <!-- Логотип -->
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <span class="header__logo-text">Живи и побеждай</span>
+                    <span class="header__logo-subtitle"> в Саратове</span>
+                </a>
+            </div>
+
+            <!-- Навигация -->
+            <nav class="header__nav" id="headerNav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#about" class="header__menu-link">О проекте</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#events" class="header__menu-link">Мероприятия</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#projects" class="header__menu-link">Проекты</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#contacts" class="header__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Правая часть -->
+            <div class="header__actions">
+                <!-- Версия для слабовидящих -->
+                <button class="header__accessibility" 
+                        type="button" 
+                        aria-label="Версия для слабовидящих"
+                        id="accessibilityToggle">
+                    <svg class="header__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3.5C6.5 3.5 3.5 6.5 3.5 10C3.5 13.5 6.5 16.5 10 16.5C13.5 16.5 16.5 13.5 16.5 10C16.5 6.5 13.5 3.5 10 3.5ZM10 15C7.5 15 5.5 13 5.5 10.5C5.5 8 7.5 6 10 6C12.5 6 14.5 8 14.5 10.5C14.5 13 12.5 15 10 15Z" fill="currentColor"/>
+                        <circle cx="10" cy="10.5" r="2.5" fill="currentColor"/>
+                    </svg>
+                    <span class="header__accessibility-text">Версия для слабовидящих</span>
+                </button>
+
+                <!-- Кнопки авторизации -->
+                <div class="header__auth">
+                    <button class="header__btn header__btn--login" type="button">
+                        Вход
+                    </button>
+                    <button class="header__btn header__btn--register" type="button">
+                        Регистрация
+                    </button>
+                </div>
+
+                <!-- Бургер меню (для мобильных) -->
+                <button class="header__burger" 
+                        type="button" 
+                        aria-label="Открыть меню"
+                        aria-expanded="false"
+                        id="burgerToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script src="header.js"></script>
+</body>
+</html>
